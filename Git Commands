@@ -19,6 +19,6 @@ git push acn master
 Frequent Commands:
 cd /Document/acn
 git add Filexxxx
-git commit -m 'Commit It'
+git commit -m "Commit It"
 git push acn master
 git push --mirror
