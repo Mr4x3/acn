@@ -12,5 +12,5 @@ git config --global credential.helper osxkeychain
 git commit -m 'first commit'
 
 git add README
-git remote add origin https://github.com/Mr4x3/acn
-git push origin master
+git remote add tcp https://github.com/Mr4x3/acn
+git push acn master
