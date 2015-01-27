@@ -14,3 +14,10 @@ git commit -m 'first commit'
 git add README
 git remote add tcp https://github.com/Mr4x3/acn
 git push acn master
+
+##############################################
+Frequent Commands:
+cd /Document/acn
+git add Filexxxx
+git commit -m 'Commit It'
+git push acn master
