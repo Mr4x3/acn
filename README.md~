@@ -1,7 +1,5 @@
 #######################################################################################
 
-Contain Advance Computer Network Programs Etc.
-
 
 1.Install python 3.4 from http://python.org
 2.In the terminal run command >>python34 Standard_tcp_Server.py

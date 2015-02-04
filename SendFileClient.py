@@ -1,10 +1,10 @@
 import socket
-import sys
+import SocketOperation
 import os
 
 def Main():
     host='127.0.0.1'
-    port=12000
+    port=8002
     s=socket.socket()
     s.connect((host,port))
     print(s.recv(1024).decode()) #Option String Recieve
@@ -14,12 +14,7 @@ def Main():
     print(os.listdir())
     l=input('> ')
     s.send(bytes(l,'utf-8')) #file name send
-    with open(l,'rb') as z:
-        x=z.read(1024)
-        while x!=b'':
-            s.send(x)
-            x=z.read(1024)
-            print('Sending {0}..'.format(l))
+    so=SocketOperation.SocketOperation.SendFile(s,l)
     s.close()
 """        while x:
             x=z.read(1024)
